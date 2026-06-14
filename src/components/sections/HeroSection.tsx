@@ -2,13 +2,12 @@
 
 import * as React from "react";
 import { Typography } from "../ui/Typography";
-import { ArrowRight, CloudOff, ShieldCheck, Stethoscope, Pill } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { Button } from "../ui/Button";
-
-import { ImageGlassContainer } from "../ui/ImageGlassContainer";
+import { WhatsAppCTA } from "../ui/WhatsAppCTA";
 
 export function HeroSection() {
   return (
@@ -59,10 +58,10 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto"
         >
-          <Button size="lg" className="group gap-4 rounded-full px-12 text-base bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-[0_20px_50px_rgba(255,255,255,0.2)] transition-haptic">
+          <WhatsAppCTA className="group gap-4 rounded-full h-14 px-12 text-base font-bold bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-[0_20px_50px_rgba(255,255,255,0.2)] transition-all duration-300 flex items-center justify-center">
             <span>Agendar Demostración</span>
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-haptic" />
-          </Button>
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </WhatsAppCTA>
           <Button variant="outline" size="lg" className="rounded-full px-12 text-base text-white border-white/40 backdrop-blur-md hover:bg-white/10 transition-haptic">
             Ver Características
           </Button>

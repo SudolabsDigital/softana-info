@@ -2,9 +2,8 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { Typography } from "../ui/Typography";
 import { ArrowRight } from "lucide-react";
-import { Button } from "../ui/Button";
+import { WhatsAppCTA } from "../ui/WhatsAppCTA";
 import { SdlFooter } from "../ui/SdlFooter";
 import { motion } from "framer-motion";
 
@@ -56,10 +55,10 @@ export function Footer() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
               >
-                <Button size="lg" className="rounded-full px-12 py-8 text-lg font-black uppercase tracking-widest bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-2xl transition-all duration-500">
+                <WhatsAppCTA className="inline-flex rounded-full h-16 px-12 text-lg font-black uppercase tracking-widest bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-2xl transition-all duration-500 items-center justify-center group">
                   <span>Solicitar mi cuenta</span>
-                  <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" strokeWidth={3} />
-                </Button>
+                  <ArrowRight className="ml-4 w-6 h-6 group-hover:translate-x-1 transition-transform" strokeWidth={3} />
+                </WhatsAppCTA>
               </motion.div>
             </div>
           </div>

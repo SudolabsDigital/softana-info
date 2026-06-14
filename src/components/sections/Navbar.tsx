@@ -2,10 +2,10 @@
 
 import * as React from "react";
 import { useState } from "react";
-import { Button } from "../ui/Button";
 import Image from "next/image";
-import { Typography } from "../ui/Typography";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+
+import { WhatsAppCTA } from "../ui/WhatsAppCTA";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -79,11 +79,11 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center">
-          <Button 
+          <WhatsAppCTA 
             className="rounded-full px-8 py-3 h-auto text-xs font-black uppercase tracking-[0.15em] bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-[0_10px_30px_-5px_rgba(255,255,255,0.2)] transition-all duration-500"
           >
             Agendar Demo
-          </Button>
+          </WhatsAppCTA>
         </div>
 
       </div>
