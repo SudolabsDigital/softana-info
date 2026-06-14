@@ -29,7 +29,7 @@ function BentoCard({ title, description, icon: Icon, className, span = "1", bgIm
         </div>
       )}
       
-      <CardContent className="relative z-10 p-8 h-full flex flex-col justify-end min-h-[280px]">
+      <CardContent className="relative z-10 p-6 md:p-8 h-full flex flex-col justify-end min-h-[280px]">
         <div className="flex flex-col items-start gap-4">
           <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white border border-white/10 group-hover:bg-primary group-hover:scale-110 transition-haptic shadow-xl">
             <Icon strokeWidth={1.5} className="w-6 h-6" />

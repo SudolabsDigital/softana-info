@@ -34,9 +34,9 @@ export function HeroSection() {
           initial={{ opacity: 0, filter: "blur(10px)", y: 30 }}
           animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-5xl sm:text-7xl md:text-[6.5rem] font-black tracking-tighter mb-8 leading-[0.85] max-w-5xl text-transparent bg-clip-text bg-gradient-to-r from-soft via-white to-soft bg-[size:200%] animate-gradient uppercase"
+          className="text-4xl sm:text-6xl md:text-[6.5rem] font-black tracking-tighter mb-6 md:mb-8 leading-[0.9] max-w-5xl text-transparent bg-clip-text bg-gradient-to-r from-soft via-white to-soft bg-[size:200%] animate-gradient uppercase"
         >
-          Tu farmacia <br />
+          Tu farmacia <br className="hidden sm:block" />
           siempre en línea
         </motion.h1>
 
@@ -46,7 +46,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Typography variant="lead" className="mb-12 text-white text-lg md:text-2xl leading-relaxed font-medium max-w-3xl drop-shadow-lg">
+          <Typography variant="lead" className="mb-10 md:mb-12 text-white text-base sm:text-lg md:text-2xl leading-relaxed font-medium max-w-3xl drop-shadow-lg px-4 md:px-0">
             Incluso cuando internet falla. SofTana es el <strong className="text-white font-black">cerebro operativo</strong> que garantiza ventas sin interrupciones y control absoluto.
           </Typography>
         </motion.div>
@@ -56,7 +56,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto px-4 sm:px-0"
         >
           <WhatsAppCTA className="group gap-4 rounded-full h-14 px-12 text-base font-bold bg-white text-primary border-2 border-white hover:bg-primary hover:text-white hover:border-primary shadow-[0_20px_50px_rgba(255,255,255,0.2)] transition-all duration-300 flex items-center justify-center">
             <span>Agendar Demostración</span>
